@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Collapsible sidebar using Bootstrap 4</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="./CSS/home.css">
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+</head>
+    <script src="./JS/home.js"></script>
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <body>
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3>Fintech</h3>
+            </div>
+
+            <ul class="list-unstyled components">
+                <li class="active">
+                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Investimentos</a>
+                    <ul class="collapse list-unstyled" id="homeSubmenu">
+                        <li>
+                            <a href="#crip">Criptomoeda</a>
+                        </li>
+                        <li>
+                            <a href="#imo">Fundos imobiliarios</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="/fiap-atv-main/assets/transa.html">Transações</a>
+                </li>
+                <li>
+                    <a href="/fiap-atv-main/assets/gastos.html">Gastos</a>
+                </li>
+                <li>
+                    <a href="#">Cartões</a>
+                </li>
+            </ul>
+
+            <ul class="list-unstyled CTAs">
+                <li>
+                    <a href="https://bootstrapious.com/tutorial/files/sidebar.zip" class="download">Download source</a>
+                </li>
+                <li>
+                    <a href="https://bootstrapious.com/p/bootstrap-sidebar" class="article">Back to article</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Page Content  -->
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="btn btn-info">
+                        <i class="fas fa-align-left"></i>
+                        <span>Toggle Sidebar</span>
+                    </button>
+                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav ml-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="/fiap-atv-main/assets/index.html">Sair</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="text1" id="">
+            <h2>Como começar a investir</h2>
+            <p>Quem já refletiu sobre o seu futuro financeiro certamente pensou sobre como começar a investir. O verbo talvez soe como uma possibilidade distante para muitas pessoas. Mas a verdade é que existem muitas formas de investir – das mais acessíveis às mais sofisticadas.
+
+                Conhecê-las, escolher a sua própria e dar os primeiros passos devem estar entre as prioridades de quem sonha em ter uma vida confortável para si e sua família.
+                
+                Se lhe falta segurança sobre como começar a investir, esse guia explica os conceitos básicos do mercado financeiro e dos investimentos, de um jeito direto e descomplicado. Confira:
+                
+                É possível investir com pouco dinheiro?
+                Antes de começar é importantes desmistificar algumas máximas tomadas como verdades absolutas. Por exemplo, muita gente pensa que investir é coisa para milionários. Que é preciso ter muito dinheiro para então poder começar. Mas, na verdade, não é.
+                
+                Em muitos casos, o que acontece é o oposto: investindo aos poucos e regularmente, mesmo que uma quantia pequena, a riqueza vai crescendo com o passar do tempo.
+                
+                Existem alternativas de investimentos para todos os bolsos, níveis de conhecimento e tempo de dedicação.
+                Na renda fixa, os títulos públicos federais negociados no Tesouro Direto estão disponíveis para quantias muito pequenas. É possível iniciar as compras no sistema a partir de R$ 30 – tão pouco quanto custa uma pizza.
+                Para quem já conseguiu guardar um pouco mais, é possível investir em CDBs – papéis muito comuns do setor bancário – com R$ 500 ou menos.</p>
+            <p>Mas realmente vale a pena começar com tão pouco? A resposta é sim. Pense em um CDB, 
+                por exemplo. A remuneração desse tipo de papel segue a lógica dos juros compostos. 
+                Significa que os retornos recebidos ao longo do tempo são incorporados ao patrimônio do investidor, 
+                e passam a render juros também.</p>
+            </div>
+            <div class="line"></div>
+            <div class="text1" id="crip">
+            <h2>Como investir em criptomoedas: passo a passo para começar com segurança</h2>
+            <p>O que são criptomoedas?
+                Criptomoedas são representações digitais de valor. O conceito surgiu com a intenção de descentralizar a produção de moedas.
+                
+                “A ideia foi criar uma espécie de dinheiro eletrônico criptografado que pudesse fluir pela internet sem a dependência de bancos ou de agentes centralizadores”, diz Fabrício Tota, diretor de novos negócios do Mercado Bitcoin. Ou seja, um dinheiro independente dos bancos centrais de todo o mundo.
+                
+                overlay-clevercloseLogo</p>
+
+                <p>O que é mineração?
+                    Antes de entender o que é mineração é necessário saber que as criptomoedas possuem uma tecnologia chamada blockchain (blocos criptográficos), local que são guardados os dados. A tecnologia permite que todas as informações enviadas e recebidas fiquem registradas, com a possibilidade de rastreá-las.
+                    
+                    “Blockchain é como se fosse um livro contábil, disponível publicamente, que registra as transações e o rastreamento de ativos em uma rede. É compartilhado e imutável, desta forma, facilita o processo de registro dessas transações”, destaca Lendel Lucas, CEO da iVi Technologies, gestora de investimentos quantitativos.
+                    
+                    Os responsáveis por esse registro são os mineradores. Eles conferem as operações das moedas com a utilização de seus computadores – que precisam ter boa capacidade de processamento.</p>
+
+                    <p>Quais são as principais criptomoedas?
+                        As principais moedas digitais são bitcoin, ethereum, dogecoin, binance Coin, ripple e litecoin, por exemplo.
+                        
+                        O especialista do Mercado Biticoin destaca que bitcoin e ether, que é a criptomoeda da rede Ethereum, são as principais criptomoedas e juntas representam 60% desse mercado.
+                        
+                        Esse domínio ocorre porque são as mais adotadas globalmente. “No mundo cripto o ‘efeito rede’ é muito importante. Quando maior a adoção e a descentralização, mais robusta e confiável é a rede”, disse.
+                        
+                        Bitcoin
+                        Criada em 2008 e considerada o ouro digital, foi a primeira criptomoeda a existir. Seu código foi feito para que haja apenas 21 milhões de unidades do tipo. É considerada a mais valiosa.
+                        
+                        Ethereum ou Ether
+                        Seu código foi concebido em 2013 e é a segunda maior criptomoeda em valor de mercado.
+                        
+                        Dogecoin
+                        Também feita em 2013, tem como estampa o cachorro japonês Kabosu e foi criada para atingir um público mais amplo, sendo considerada uma criptomoeda meme.
+                        
+                        Binance Coin
+                        A corretora mundial de criptomoedas Binance lançou sua criptomoeda em 2017.
+                        
+                        Ripple
+                        Tem a XRP como moeda nativa de seu sistema que, feito em 2011, permite que outras criptomoedas e ativos possam ser negociados.
+                        
+                        Litecoin
+                        Foi criada em 2011 e é considerada a prata das criptomoedas. Tem características parecidas com o bitcoin.</p>
+</div>
+            <div class="line"></div>
+            <div class="text1" id="imo">
+            <h2>Quais são as melhores formas de investir em imóveis?</h2>
+            <p>É vantajoso investir em imóveis?
+                Como dissemos, a construção civil e o mercado imobiliário ocupam relevantes posições na economia nacional em movimentação de recursos, captação de investimentos, geração de empregos, entre outros números de destaque.</p>
+
+                <p>. Fundos Imobiliários (FIIs)
+                    O investimento mais procurado nesse setor atualmente, seja pelos investidores pessoa física, jurídicas ou institucionais, são os Fundos Imobiliários (FIIs).
+                    
+                    Eles são veículos em que vários investidores entram com uma fração do patrimônio total do Fundo que, sob a administração de um gestor, vai aplicar na construção e/ou exploração de imóveis comerciais (FIIs de tijolo) ou produtos do mercado imobiliário (FIIs de papel).
+                    
+                    Então, o cotista ganha tanto com a valorização das suas cotas quanto com o recebimento dos aluguéis dos imóveis ou geração de renda do Fundo, uma vez que eles são obrigados a distribuir ao menos 95% do resultado líquido entre os cotistas. </p>
+    </div>
+</div>
+</body>
+    </html>
